@@ -1,0 +1,72 @@
+.songList, .tagList {
+    display: flex;
+    flex-direction: column;
+}
+
+.songList button, .tagList button {
+    background-color: var(--accent);
+    color: var(--white);
+    border: none;
+    margin-top: 1em;
+    padding: 1em;
+    text-transform: capitalize;
+    transition: 0.1s;
+}
+
+.songList button:hover, .tagList button:hover  {
+    background-color: var(--accent-hover);
+}
+
+.songList button:disabled, .tagList button:disabled  {
+    background-color: var(--accent-gray);
+}
+
+.editTag{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.editTag input{
+    background-color: var(--white);
+    color: var(--black);
+    border: var(--accent) 2px solid;
+    padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    flex-grow: 1;
+}
+
+.editTag div{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.toggleButton{
+    padding: 1em;
+}
+
+.editTag button, .toggleButton{
+    background-color: var(--accent);
+    color: var(--white);
+    border: none;
+    transition: 0.1s;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.editTag button:hover, .toggleButton:hover{
+    background-color: var(--accent-hover);
+}
+
+
+.editTag button:disabled {
+    background-color: var(--accent-gray) !important;
+}
+
+.tagBox{
+    position: sticky;
+    align-self: flex-start;
+    top: 0;
+}

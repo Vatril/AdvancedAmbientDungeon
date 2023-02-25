@@ -19,6 +19,7 @@
     "react-ionicons": "^4.2.0",
     "react-scripts": "5.0.1",
     "serve": "^14.0.1",
+    "sqlite3": "^5.1.4",
     "typeface-roboto": "^1.1.13"
   },
   "devDependencies": {

@@ -5,13 +5,14 @@ import { ApolloProvider } from "@apollo/client"
 import "./index.css"
 import "typeface-roboto"
 import { App } from "./App"
+import { TagApp } from "./TagApp"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
 root.render(
     <React.StrictMode>
         <ApolloProvider client={client}>
-            <App />
+            {window.location.href.includes("/tag") ? <TagApp /> : <App />}
         </ApolloProvider>
     </React.StrictMode>,
 )
